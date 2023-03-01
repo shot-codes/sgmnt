@@ -20,7 +20,7 @@
 </script>
 
 <T.Mesh let:ref {material} {position} scale={scaleO}>
-	<InteractiveObject
+	<!-- <InteractiveObject
 		object={ref}
 		interactive
 		on:pointerenter={() => {
@@ -29,7 +29,7 @@
 		on:pointerleave={() => {
 			$scale = 1;
 		}}
-	/>
+	/> -->
 	<T.SphereGeometry args={[1, 256, 256]} />
 	<!-- <T.MeshStandardMaterial color="#00ff00"></T.MeshStandardMaterial> -->
 </T.Mesh>

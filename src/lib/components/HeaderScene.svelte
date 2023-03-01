@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { Canvas, OrbitControls, T } from '@threlte/core';
 	import Orb from '$lib/components/Orb.svelte';
+	import Camera from './Camera.svelte';
 
 	export let isDarkMode: boolean;
 </script>
 
-<div class="relative flex h-full w-full dark:text-white dark:bg-black">
+<div class="relative flex h-full w-full dark:text-white">
 	{#if isDarkMode}
 		<img
 			class="absolute left-[40px] top-1/4 pointer-events-none w-[250px] sm:w-[300px] md:w-[500px]"
@@ -32,14 +33,7 @@
 
 	<div class="absolute h-full w-full">
 		<Canvas>
-			<T.PerspectiveCamera makeDefault position={[10, 0, 0]} fov={24}>
-				<OrbitControls
-					enableZoom={false}
-					enablePan={true}
-					enableRotate={false}
-					target={{ x: 0, y: 0, z: 0 }}
-				/>
-			</T.PerspectiveCamera>
+			<Camera />
 
 			<T.DirectionalLight castShadow position={[10, 2, -10]} />
 			<T.AmbientLight intensity={0.2} />

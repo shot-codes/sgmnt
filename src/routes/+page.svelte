@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Grain from '$lib/components/Grain.svelte';
 	import HeaderScene from '$lib/components/HeaderScene.svelte';
 	import { onMount } from 'svelte';
 
@@ -52,4 +53,6 @@
 	<div class="flex justify-center w-full h-full">
 		<HeaderScene {isDarkMode} />
 	</div>
+
+	<Grain />
 </div>
