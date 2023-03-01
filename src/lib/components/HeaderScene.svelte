@@ -6,7 +6,7 @@
 	export let isDarkMode: boolean;
 </script>
 
-<div class="relative flex h-full w-full dark:text-white">
+<div class="relative flex h-full w-full dark:text-white select-none">
 	{#if isDarkMode}
 		<img
 			class="absolute left-[40px] top-1/4 pointer-events-none w-[250px] sm:w-[300px] md:w-[500px]"
