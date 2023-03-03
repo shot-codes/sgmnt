@@ -1,11 +1,5 @@
 import {
 	Color,
-	PointsMaterial,
-	AdditiveBlending,
-	Float32BufferAttribute,
-	Vector3,
-	BufferGeometry,
-	Points
 } from 'three';
 import { LayerMaterial, Depth, Displace, Fresnel, Noise } from 'lamina/vanilla';
 

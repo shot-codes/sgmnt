@@ -11,7 +11,7 @@
 
 	const { material, displace } = materials[materialIndex]();
 
-	$: displace.strength = $scale;
+	// $: displace.strength = $scale;
 
 	useFrame(() => {
 		// @ts-expect-error - this property is present when running, not sure why ts doesn't pick up on it.
@@ -19,7 +19,7 @@
 	});
 </script>
 
-<T.Mesh let:ref {material} {position} scale={scaleO}>
+<T.Mesh let:ref {material} {position} scale={scaleO} frustumCulled={false}>
 	<!-- <InteractiveObject
 		object={ref}
 		interactive
