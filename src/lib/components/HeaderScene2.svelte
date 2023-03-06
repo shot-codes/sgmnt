@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Canvas, OrbitControls, T } from '@threlte/core';
-	import Orb from '$lib/components/Orb.svelte';
+	import Orb from '$lib/components/Orb2.svelte';
 	import Camera from './Camera.svelte';
 
 	export let isDarkMode: boolean;

@@ -2,7 +2,7 @@
 	import { Pass } from '@threlte/core';
 	import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
 
-	let fx = new FilmPass(100, 0.1, 256);
+	let fx = new FilmPass(100, 0, 256);
 	fx.renderToScreen = true;
 </script>
 
