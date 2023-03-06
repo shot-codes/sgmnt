@@ -60,7 +60,7 @@
 		/>
 	{/if}
 
-	{#if isDarkMode}
+	<!-- {#if isDarkMode}
 		<img
 			class="absolute left-[40px] md:top-[calc(0.25*100vh+200px)] md:top-[calc(0.25*100vh+200px)] top-[calc(0.25*100vh+100px)] pointer-events-none w-[150px] sm:w-[200px] md:w-[400px]"
 			src="/images/moto-stroke.svg"
@@ -70,7 +70,7 @@
 			class="absolute left-[40px] md:top-[calc(0.25*100vh+200px)] md:top-[calc(0.25*100vh+200px)] top-[calc(0.25*100vh+100px)] pointer-events-none w-[150px] sm:w-[200px] md:w-[400px]"
 			src="/images/moto-black-stroke.svg"
 		/>
-	{/if}
+	{/if} -->
 
 	{#if isDarkMode}
 		<img
