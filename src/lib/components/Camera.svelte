@@ -11,8 +11,8 @@
 
 	$: { 
     if(renderer) {
-      renderer.debug.checkShaderErrors = true;
-      console.log("shader check active");
+      renderer.debug.checkShaderErrors = false;
+      console.log("disabled shader check");
     }
   }
 
