@@ -4,10 +4,17 @@
 	import { Vector3, Mesh } from 'three';
 	import { spring } from 'svelte/motion';
 
-	const { pointer } = useThrelte();
+	const { pointer, renderer } = useThrelte();
 	let cameraOrigin = new Vector3(10, 0, 0);
 	let cameraPosition = new Vector3(10, 0, 0);
 	let mesh: Mesh;
+
+	$: { 
+    if(renderer) {
+      renderer.debug.checkShaderErrors = true;
+      console.log("shader check active");
+    }
+  }
 
 	const cameraPositionSpring = spring([10, 0, 0]);
 	$: {

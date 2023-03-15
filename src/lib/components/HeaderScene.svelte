@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Canvas, OrbitControls, T } from '@threlte/core';
+	import { Canvas, T } from '@threlte/core';
 	import Orb from '$lib/components/Orb.svelte';
 	import Camera from './Camera.svelte';
 

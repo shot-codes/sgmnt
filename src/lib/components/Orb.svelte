@@ -30,6 +30,6 @@
 			$scale = 1;
 		}}
 	/> -->
-	<T.SphereGeometry args={[1, 256, 256]} />
+	<T.SphereGeometry args={[1, 64, 64]} />
 	<!-- <T.MeshStandardMaterial color="#00ff00"></T.MeshStandardMaterial> -->
 </T.Mesh>
